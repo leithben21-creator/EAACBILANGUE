@@ -1,0 +1,23 @@
+EAAC v1.4 - PROJET COMPLET
+==========================
+1. github.com -> New repository (nom: eaac) -> Create.
+   (Si le depot eaac existe deja : supprimez son contenu ou creez un nouveau depot.)
+2. "uploading an existing file" : glissez TOUT le contenu du dossier EAAC
+   (www, assets, android-patch, package.json, capacitor.config.json) -> Commit changes.
+3. Add file -> Create new file. Nom: .github/workflows/build-apk.yml
+   Collez le contenu de build-apk.yml (fourni) -> Commit changes.
+   (Le dossier .github est cache sur certains systemes : utilisez le fichier build-apk.yml fourni a part.)
+4. Onglet Actions -> "Build EAAC APK" -> attendre ~5 min (rond vert). Si rien ne demarre: Run workflow.
+5. Cliquez sur l'execution -> Artifacts -> EAAC-apk -> telechargez, dezippez:
+   app-debug.apk -> installez sur le telephone.
+
+NOUVEAUTES v1.4 : code PIN, boussole en mil, MGRS, cartes hors ligne, regle sur la carte, plan de cibles (PDF),
+partage par QR code, choix de charge AUTO/MANUEL, GPS, fiche PDF/image, KML/GPX, sauvegarde JSON, mode d'emploi.
+
+PREMIERE UTILISATION :
+- Au premier appui sur GPS, autorisez la localisation "Pendant l'utilisation".
+- Si l'ancienne version est installee : si l'installation echoue (conflit de signature), desinstallez-la d'abord
+  (l'historique sera perdu : exportez le CSV avant). Sinon ouvrez l'app deux fois pour purger l'ancien cache.
+
+NOTE : l'application demande aussi l'autorisation CAMERA (scanner de QR code) au premier scan.
+LANGUES : FR / EN / AR (bouton sur le menu et dans chaque ecran) - v1.4
